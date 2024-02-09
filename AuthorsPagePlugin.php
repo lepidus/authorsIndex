@@ -5,12 +5,8 @@ namespace APP\plugins\generic\authorsPage;
 use PKP\plugins\Hook;
 use PKP\plugins\GenericPlugin;
 use APP\core\Application;
-use APP\facades\Repo;
-use PKP\security\Role;
-use APP\template\TemplateManager;
-use APP\submission\Submission;
 
-class AuthorsPage extends GenericPlugin
+class AuthorsPagePlugin extends GenericPlugin
 {
     public function register($category, $path, $mainContextId = null)
     {
@@ -21,7 +17,7 @@ class AuthorsPage extends GenericPlugin
         }
 
         if ($success && $this->getEnabled($mainContextId)) {
-            //Hook::add('LoadHandler', [$this, 'replaceSearchHandler']);
+            Hook::add('LoadHandler', [$this, 'addAuthorsHandler']);
         }
 
         return $success;
@@ -35,5 +31,15 @@ class AuthorsPage extends GenericPlugin
     public function getDescription()
     {
         return __('plugins.generic.authorsPage.description');
+    }
+
+    public function addAuthorsHandler($hookName, $params)
+    {
+        $page = $params[0];
+        if ($page == 'authors') {
+            define('HANDLER_CLASS', 'APP\plugins\generic\authorsPage\pages\authors\AuthorsHandler');
+            return true;
+        }
+        return false;
     }
 }
