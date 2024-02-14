@@ -16,3 +16,12 @@ msgstr "Página de autores"
 
 msgid "plugins.generic.authorsPage.description"
 msgstr "Este módulo agrega una página donde se enumeran todos los autores con artículos publicados"
+
+msgid "plugins.generic.authorsPage.pageTitle"
+msgstr "Autores"
+
+msgid "plugins.generic.authorsPage.pageTitle.withNumber"
+msgstr "Autores - Página {$pageNumber}"
+
+msgid "plugins.generic.authorsPage.noAuthors"
+msgstr "Este periódico no tiene autores con artículos publicados"

@@ -16,3 +16,12 @@ msgstr "Authors page"
 
 msgid "plugins.generic.authorsPage.description"
 msgstr "This plugin adds a new page to OJS, where all authors with published articles are listed"
+
+msgid "plugins.generic.authorsPage.pageTitle"
+msgstr "Authors"
+
+msgid "plugins.generic.authorsPage.pageTitle.withNumber"
+msgstr "Authors - Page {$pageNumber}"
+
+msgid "plugins.generic.authorsPage.noAuthors"
+msgstr "This journal has no authors who contributed yet."

@@ -16,3 +16,12 @@ msgstr "Página de autores"
 
 msgid "plugins.generic.authorsPage.description"
 msgstr "Este plugin adiciona uma página onde são listados todos os autores com artigos publicados"
+
+msgid "plugins.generic.authorsPage.pageTitle"
+msgstr "Autores"
+
+msgid "plugins.generic.authorsPage.pageTitle.withNumber"
+msgstr "Autores - Página {$pageNumber}"
+
+msgid "plugins.generic.authorsPage.noAuthors"
+msgstr "Essa revista ainda não possui autores com trabalhos publicados."

@@ -16,3 +16,12 @@ msgstr "Författare sida"
 
 msgid "plugins.generic.authorsPage.description"
 msgstr "Detta plugin lägger till en ny sida till OJS, där alla författare med publicerade artiklar listas"
+
+msgid "plugins.generic.authorsPage.pageTitle"
+msgstr "Författare"
+
+msgid "plugins.generic.authorsPage.pageTitle.withNumber"
+msgstr "Författare - Sida {$pageNumber}"
+
+msgid "plugins.generic.authorsPage.noAuthors"
+msgstr "Denna tidskrift har inga författare som bidragit ännu."
