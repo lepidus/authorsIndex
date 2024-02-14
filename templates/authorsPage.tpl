@@ -23,7 +23,30 @@
     {if empty($contributingAuthors)}
         <p>{translate key="plugins.generic.authorsPage.noAuthors"}</p>
     {else}
-        <p></p>
+        <div id="authorsList">
+            {foreach from=$contributingAuthors item="author"}
+                <a>{$author|escape}</a>
+                <br>
+            {/foreach}
+        </div>
+
+        {* Pagination *}
+		{if $prevPage > 1}
+            {capture assign=prevUrl}{url router=$smarty.const.ROUTE_PAGE page="authors" path=$prevPage}{/capture}
+        {elseif $prevPage === 1}
+            {capture assign=prevUrl}{url router=$smarty.const.ROUTE_PAGE page="authors"}{/capture}
+        {/if}
+        {if $nextPage}
+            {capture assign=nextUrl}{url router=$smarty.const.ROUTE_PAGE page="authors" path=$nextPage}{/capture}
+        {/if}
+        {include
+            file="frontend/components/pagination.tpl"
+            prevUrl=$prevUrl
+            nextUrl=$nextUrl
+            showingStart=$showingStart
+            showingEnd=$showingEnd
+            total=$total
+        }
     {/if}
 </div>
 
