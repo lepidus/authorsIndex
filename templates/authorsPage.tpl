@@ -24,8 +24,9 @@
         <p>{translate key="plugins.generic.authorsPage.noAuthors"}</p>
     {else}
         <div id="authorsList">
-            {foreach from=$contributingAuthors item="author"}
-                <a>{$author|escape}</a>
+            {foreach from=$contributingAuthors item="searchParam" key="displayName"}
+                {capture assign="authorSearchUrl"}{url router=$smarty.const.ROUTE_PAGE page="search" op="index" params=['query' => '', 'dateFromYear' => '', 'dateToYear' => '', 'dateToMonth' => '', 'dateToDay' => '', 'authors' => $searchParam|escape, 'sections' => '']}{/capture}
+                <a href="{$authorSearchUrl}">{$displayName|escape}</a>
                 <br>
             {/foreach}
         </div>

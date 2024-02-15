@@ -28,13 +28,13 @@ class AuthorsPageDAO extends DAO
         }
 
         foreach ($authors as $author) {
-            $fullName = $author->getFullName();
+            $displayName = $author->getLocalizedFamilyName() . ', ' . $author->getLocalizedGivenName();
 
-            if (!isset($authorNames[$fullName])) {
-                $authorNames[$fullName] = $author->getLocalizedFamilyName() . ', ' . $author->getLocalizedGivenName();
+            if (!isset($authorNames[$displayName])) {
+                $authorNames[$displayName] = $author->getLocalizedGivenName() . '+' . $author->getLocalizedFamilyName();
             }
         }
-        asort($authorNames);
+        ksort($authorNames);
         return $authorNames;
     }
 }

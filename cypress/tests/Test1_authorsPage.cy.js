@@ -11,4 +11,12 @@ describe('Validatiations in the Authors page', function () {
             cy.contains('a', authorName);
         }
     });
+    it('Go to the search results of the author when clicking on author name', function () {
+        cy.visit('publicknowledge/authors');
+        cy.contains('a', 'Karbasizaed, Vajiheh').click();
+        cy.waitJQuery();
+        cy.contains('h1', 'Search');
+        cy.contains('Vajiheh Karbasizaed');
+        cy.contains('Antimicrobial, heavy metal resistance and plasmid profile of coliforms isolated from nosocomial infections in a hospital in Isfahan, Iran');
+    });
 });
