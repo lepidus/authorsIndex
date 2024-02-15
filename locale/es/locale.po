@@ -12,16 +12,16 @@ msgstr ""
 "Language: Español\n"
 
 msgid "plugins.generic.authorsIndex.displayName"
-msgstr "Página de autores"
+msgstr "Índice de autores"
 
 msgid "plugins.generic.authorsIndex.description"
-msgstr "Este módulo agrega una página donde se enumeran todos los autores con artículos publicados"
+msgstr "Este plugin añade una nueva página a OJS/OPS, donde se listan todos los autores con publicaciones"
 
 msgid "plugins.generic.authorsIndex.pageTitle"
-msgstr "Autores"
+msgstr "Índice de autores"
 
 msgid "plugins.generic.authorsIndex.pageTitle.withNumber"
-msgstr "Autores - Página {$pageNumber}"
+msgstr "Índice de autores - Página {$pageNumber}"
 
 msgid "plugins.generic.authorsIndex.noAuthors"
 msgstr "Este periódico no tiene autores con artículos publicados"

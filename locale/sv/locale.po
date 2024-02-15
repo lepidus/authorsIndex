@@ -12,16 +12,16 @@ msgstr ""
 "Language: Swedish\n"
 
 msgid "plugins.generic.authorsIndex.displayName"
-msgstr "Författare sida"
+msgstr "Författarindex"
 
 msgid "plugins.generic.authorsIndex.description"
-msgstr "Detta plugin lägger till en ny sida till OJS, där alla författare med publicerade artiklar listas"
+msgstr "Detta plugin lägger till en ny sida i OJS/OPS, där alla författare med publikationer listas"
 
 msgid "plugins.generic.authorsIndex.pageTitle"
-msgstr "Författare"
+msgstr "Författarindex"
 
 msgid "plugins.generic.authorsIndex.pageTitle.withNumber"
-msgstr "Författare - Sida {$pageNumber}"
+msgstr "Författarindex - Sida {$pageNumber}"
 
 msgid "plugins.generic.authorsIndex.noAuthors"
 msgstr "Denna tidskrift har inga författare som bidragit ännu."
