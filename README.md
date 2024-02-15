@@ -7,6 +7,7 @@ This plugin adds a new page to OJS, where all authors with published articles ar
 The latest release of this plugin is compatible with the following PKP applications:
 
 OJS 3.4.0
+OPS 3.4.0
 
 ## Plugin Download
 
