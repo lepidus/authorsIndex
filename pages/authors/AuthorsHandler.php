@@ -39,7 +39,6 @@ class AuthorsHandler extends Handler
 
         return [
             'contributingAuthors' => $contributingAuthors,
-            'orderBy' => $orderBy,
             'showingStart' => $showingStart,
             'showingEnd' => $showingEnd,
             'total' => $total,

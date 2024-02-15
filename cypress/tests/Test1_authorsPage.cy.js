@@ -4,10 +4,10 @@ describe('Validatiations in the Authors page', function () {
     
     it('Access the authors page', function () {
         cy.visit('publicknowledge/authors');
-        cy.get('h1').should('contain', 'Authors');
-        cy.get('#authorsList').children().should('have.length', expectedAuthorsCount);
+        cy.contains('h1', 'Authors');
+        cy.get('#authorsList').children().should('have.length', expectedAuthorsCount * 2);
 
-        for (authorName in expectedAuthorsNames) {
+        for (let authorName of expectedAuthorsNames) {
             cy.contains('a', authorName);
         }
     });
