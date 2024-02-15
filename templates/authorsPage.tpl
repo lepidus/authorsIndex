@@ -15,6 +15,7 @@
     {/if}
 {/capture}
 
+<link rel="stylesheet" type="text/css" href="/plugins/generic/authorsPage/styles/authorsList.css">
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
 
 <div class="page">
