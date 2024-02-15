@@ -1,24 +1,24 @@
 <?php
 
-namespace APP\plugins\generic\authorsPage\pages\authors;
+namespace APP\plugins\generic\authorsIndex\pages\authors;
 
 use APP\handler\Handler;
 use APP\template\TemplateManager;
 use PKP\plugins\PluginRegistry;
 use PKP\config\Config;
-use APP\plugins\generic\authorsPage\classes\AuthorsPageDAO;
+use APP\plugins\generic\authorsIndex\classes\AuthorsIndexDAO;
 
 class AuthorsHandler extends Handler
 {
     public function index($args, $request)
     {
-        $plugin = PluginRegistry::getPlugin('generic', 'authorspageplugin');
+        $plugin = PluginRegistry::getPlugin('generic', 'authorsindexplugin');
         $templateMgr = TemplateManager::getManager($request);
 
         $pageData = $this->getPageData($args, $request);
         $templateMgr->assign($pageData);
 
-        return $templateMgr->display($plugin->getTemplateResource('authorsPage.tpl'));
+        return $templateMgr->display($plugin->getTemplateResource('authorsIndex.tpl'));
     }
 
     private function getPageData($args, $request): array
@@ -28,7 +28,7 @@ class AuthorsHandler extends Handler
         $itemsPerPage = $context->getData('itemsPerPage') ? $context->getData('itemsPerPage') : Config::getVar('interface', 'items_per_page');
         $offset = $page > 1 ? ($page - 1) * $itemsPerPage : 0;
 
-        $dao = new AuthorsPageDAO();
+        $dao = new AuthorsIndexDAO();
         $contributingAuthors = $dao->getContributingAuthors($context->getId());
         $total = count($contributingAuthors);
 

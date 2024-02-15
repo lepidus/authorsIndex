@@ -1,12 +1,12 @@
 <?php
 
-namespace APP\plugins\generic\authorsPage;
+namespace APP\plugins\generic\authorsIndex;
 
 use PKP\plugins\Hook;
 use PKP\plugins\GenericPlugin;
 use APP\core\Application;
 
-class AuthorsPagePlugin extends GenericPlugin
+class AuthorsIndexPlugin extends GenericPlugin
 {
     public function register($category, $path, $mainContextId = null)
     {
@@ -25,19 +25,19 @@ class AuthorsPagePlugin extends GenericPlugin
 
     public function getDisplayName()
     {
-        return __('plugins.generic.authorsPage.displayName');
+        return __('plugins.generic.authorsIndex.displayName');
     }
 
     public function getDescription()
     {
-        return __('plugins.generic.authorsPage.description');
+        return __('plugins.generic.authorsIndex.description');
     }
 
     public function addAuthorsHandler($hookName, $params)
     {
         $page = $params[0];
         if ($page == 'authors') {
-            define('HANDLER_CLASS', 'APP\plugins\generic\authorsPage\pages\authors\AuthorsHandler');
+            define('HANDLER_CLASS', 'APP\plugins\generic\authorsIndex\pages\authors\AuthorsHandler');
             return true;
         }
         return false;

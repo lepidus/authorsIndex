@@ -11,17 +11,17 @@ msgstr ""
 "PO-Revision-Date: 2022-05-27T08:00:00+02:00\n"
 "Language: Português (Brasil)\n"
 
-msgid "plugins.generic.authorsPage.displayName"
-msgstr "Página de autores"
+msgid "plugins.generic.authorsIndex.displayName"
+msgstr "Índice de autores"
 
-msgid "plugins.generic.authorsPage.description"
-msgstr "Este plugin adiciona uma página onde são listados todos os autores com artigos publicados"
+msgid "plugins.generic.authorsIndex.description"
+msgstr "Este plugin adiciona uma página onde são listados todos os autores com trabalhos publicados"
 
-msgid "plugins.generic.authorsPage.pageTitle"
-msgstr "Autores"
+msgid "plugins.generic.authorsIndex.pageTitle"
+msgstr "Índice de Autores"
 
-msgid "plugins.generic.authorsPage.pageTitle.withNumber"
-msgstr "Autores - Página {$pageNumber}"
+msgid "plugins.generic.authorsIndex.pageTitle.withNumber"
+msgstr "Índice de Autores - Página {$pageNumber}"
 
-msgid "plugins.generic.authorsPage.noAuthors"
+msgid "plugins.generic.authorsIndex.noAuthors"
 msgstr "Essa revista ainda não possui autores com trabalhos publicados."

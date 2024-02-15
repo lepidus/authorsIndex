@@ -11,17 +11,17 @@ msgstr ""
 "PO-Revision-Date: 2022-05-27T08:00:00+02:00\n"
 "Language: Español\n"
 
-msgid "plugins.generic.authorsPage.displayName"
+msgid "plugins.generic.authorsIndex.displayName"
 msgstr "Página de autores"
 
-msgid "plugins.generic.authorsPage.description"
+msgid "plugins.generic.authorsIndex.description"
 msgstr "Este módulo agrega una página donde se enumeran todos los autores con artículos publicados"
 
-msgid "plugins.generic.authorsPage.pageTitle"
+msgid "plugins.generic.authorsIndex.pageTitle"
 msgstr "Autores"
 
-msgid "plugins.generic.authorsPage.pageTitle.withNumber"
+msgid "plugins.generic.authorsIndex.pageTitle.withNumber"
 msgstr "Autores - Página {$pageNumber}"
 
-msgid "plugins.generic.authorsPage.noAuthors"
+msgid "plugins.generic.authorsIndex.noAuthors"
 msgstr "Este periódico no tiene autores con artículos publicados"

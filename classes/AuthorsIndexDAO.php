@@ -1,6 +1,6 @@
 <?php
 
-namespace APP\plugins\generic\authorsPage\classes;
+namespace APP\plugins\generic\authorsIndex\classes;
 
 use PKP\db\DAO;
 use Illuminate\Support\Facades\DB;
@@ -9,7 +9,7 @@ use APP\submission\Submission;
 use PKP\services\PKPSchemaService;
 use PKP\author\DAO as AuthorDAO;
 
-class AuthorsPageDAO extends DAO
+class AuthorsIndexDAO extends DAO
 {
     public function getContributingAuthors(int $contextId): array
     {

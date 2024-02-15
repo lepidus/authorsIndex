@@ -1,5 +1,5 @@
 variables:
-    PLUGIN_NAME: 'authorsPage'
+    PLUGIN_NAME: 'authorsIndex'
     
 include:
   - project: 'documentacao-e-tarefas/modelosparaintegracaocontinua'

@@ -11,17 +11,17 @@ msgstr ""
 "PO-Revision-Date: 2022-05-27T08:00:00+02:00\n"
 "Language: English\n"
 
-msgid "plugins.generic.authorsPage.displayName"
-msgstr "Authors page"
+msgid "plugins.generic.authorsIndex.displayName"
+msgstr "Authors Index"
 
-msgid "plugins.generic.authorsPage.description"
-msgstr "This plugin adds a new page to OJS, where all authors with published articles are listed"
+msgid "plugins.generic.authorsIndex.description"
+msgstr "This plugin adds a new page to OJS/OPS, where all authors with publications are listed"
 
-msgid "plugins.generic.authorsPage.pageTitle"
-msgstr "Authors"
+msgid "plugins.generic.authorsIndex.pageTitle"
+msgstr "Authors Index"
 
-msgid "plugins.generic.authorsPage.pageTitle.withNumber"
-msgstr "Authors - Page {$pageNumber}"
+msgid "plugins.generic.authorsIndex.pageTitle.withNumber"
+msgstr "Authors Index - Page {$pageNumber}"
 
-msgid "plugins.generic.authorsPage.noAuthors"
+msgid "plugins.generic.authorsIndex.noAuthors"
 msgstr "This journal has no authors who contributed yet."

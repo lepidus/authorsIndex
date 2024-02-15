@@ -1,5 +1,5 @@
 {**
- * plugins/generic/authorsPage/templates/authorsPage.tpl
+ * plugins/generic/authorsIndex/templates/authorsIndex.tpl
  *
  * Copyright (c) 2024 Lepidus Tecnologia
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
@@ -9,20 +9,20 @@
  *}
 {capture assign="pageTitle"}
     {if $prevPage}
-        {translate key="plugins.generic.authorsPage.pageTitle.withNumber" pageNumber=$prevPage+1}
+        {translate key="plugins.generic.authorsIndex.pageTitle.withNumber" pageNumber=$prevPage+1}
     {else}
-        {translate key="plugins.generic.authorsPage.pageTitle"}
+        {translate key="plugins.generic.authorsIndex.pageTitle"}
     {/if}
 {/capture}
 
-<link rel="stylesheet" type="text/css" href="/plugins/generic/authorsPage/styles/authorsList.css">
+<link rel="stylesheet" type="text/css" href="/plugins/generic/authorsIndex/styles/authorsList.css">
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
 
 <div class="page">
     <h1>{$pageTitle|escape}</h1>
 
     {if empty($contributingAuthors)}
-        <p>{translate key="plugins.generic.authorsPage.noAuthors"}</p>
+        <p>{translate key="plugins.generic.authorsIndex.noAuthors"}</p>
     {else}
         <div id="authorsList">
             {foreach from=$contributingAuthors item="searchParam" key="displayName"}
