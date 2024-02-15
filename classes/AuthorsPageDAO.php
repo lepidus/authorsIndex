@@ -22,12 +22,9 @@ class AuthorsPageDAO extends DAO
 
         $schemaService = new PKPSchemaService();
         $authorDao = new AuthorDAO($schemaService);
-        $authors = [];
-        foreach ($results as $row) {
-            $authors[] = $authorDao->fromRow($row);
-        }
 
-        foreach ($authors as $author) {
+        foreach ($results as $row) {
+            $author = $authorDao->fromRow($row);
             $displayName = $author->getLocalizedFamilyName() . ', ' . $author->getLocalizedGivenName();
 
             if (!isset($authorNames[$displayName])) {
