@@ -26,7 +26,7 @@
     {else}
         <div id="authorsList">
             {foreach from=$contributingAuthors item="searchParam" key="displayName"}
-                {capture assign="authorSearchUrl"}{url router=$smarty.const.ROUTE_PAGE page="search" op="index" params=['query' => '', 'dateFromYear' => '', 'dateToYear' => '', 'dateToMonth' => '', 'dateToDay' => '', 'authors' => $searchParam|escape, 'sections' => '']}{/capture}
+                {capture assign="authorSearchUrl"}{url router=$smarty.const.ROUTE_PAGE page="search" op="index" params=['query' => '', 'dateFromYear' => '', 'dateToYear' => '', 'dateToMonth' => '', 'dateToDay' => '', 'authors' => $searchParam|escape]}{/capture}
                 <a href="{$authorSearchUrl}">{$displayName|escape}</a>
                 <br>
             {/foreach}
