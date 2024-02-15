@@ -30,9 +30,10 @@ class AuthorsHandler extends Handler
 
         $dao = new AuthorsPageDAO();
         $contributingAuthors = $dao->getContributingAuthors($context->getId());
+        $total = count($contributingAuthors);
+
         $contributingAuthors = array_slice($contributingAuthors, $offset, $itemsPerPage, true);
 
-        $total = count($contributingAuthors);
         $showingStart = $offset + 1;
         $showingEnd = min($offset + $itemsPerPage, $offset + $total);
         $nextPage = $total > $showingEnd ? $page + 1 : null;

@@ -25,10 +25,12 @@ class AuthorsPageDAO extends DAO
 
         foreach ($results as $row) {
             $author = $authorDao->fromRow($row);
-            $displayName = $author->getLocalizedFamilyName() . ', ' . $author->getLocalizedGivenName();
+            $givenName = trim($author->getLocalizedGivenName());
+            $familyName = trim($author->getLocalizedFamilyName());
+            $displayName = $familyName . ', ' . $givenName;
 
             if (!isset($authorNames[$displayName])) {
-                $authorNames[$displayName] = $author->getLocalizedGivenName() . '+' . $author->getLocalizedFamilyName();
+                $authorNames[$displayName] = $givenName . ' ' . $familyName;
             }
         }
         ksort($authorNames);
