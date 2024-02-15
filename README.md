@@ -1,6 +1,15 @@
 # Authors Page Plugin
 
-This plugin adds a new page to OJS, where all authors with published articles are listed. When clicking in the name of an author, the search page opens, searching for the specific author.
+This plugin adds a new page to OJS or OPS, where all authors with published articles are listed. \
+When clicking in the name of an author, youre led to the search results of publications by the chosen author on the journal/server.
+
+## Usage
+
+The "Authors" page is allocated in the `/authors` path of the Journal or Preprint server. \
+e.g.: `https://your-site.com/index.php/journalName/authors`
+
+You can create a *Navigation Menu Item* to the new *Authors* page, so it can be accessed from the website's header. \
+Make sure to add the new item as an *external link*, and pass the complete URL.
 
 ## Compatibility
 
