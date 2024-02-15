@@ -46,27 +46,4 @@ class AuthorsHandler extends Handler
             'prevPage' => $prevPage
         ];
     }
-
-    private function getContributingAuthors(int $contextId): array
-    {
-        $authorNames = [];
-        $authors = Repo::author()->getCollector()
-            ->filterByContextIds([$context->getId()])
-            ->getMany();
-
-        foreach ($authors as $author) {
-            $fullName = $author->getFullName();
-
-            if (!isset($authorNames[$fullName])) {
-                $dao = new AuthorsPageDAO();
-                $publicationId = $author->getData('publicationId');
-
-                if ($dao->publicationIsPublished($publicationId)) {
-                    $authorNames[$fullName] = $author->getLocalizedFamilyName() . ', ' . $author->getLocalizedGivenName();
-                }
-            }
-        }
-        asort($authorNames);
-        return $authorNames;
-    }
 }
