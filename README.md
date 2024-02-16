@@ -1,7 +1,7 @@
 # Authors Index Plugin
 
 This plugin adds a new page to OJS or OPS, where all authors with published articles are listed. \
-When clicking in the name of an author, youre led to the search results of publications by the chosen author on the journal/server.
+When clicking in the name of an author, you're led to the search results of publications by the chosen author on the journal/server.
 
 ## Usage
 
