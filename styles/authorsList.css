@@ -5,3 +5,24 @@
 #authorsList a {
     line-height: 2rem;
 }
+
+@media (min-width: 992px) {
+#authorsList {
+    column-count: 3;
+	column-gap: 10px;
+}
+}
+
+@media (max-width: 992px) {
+#authorsList {
+    column-count: 2;
+	column-gap: 10px;
+}
+}
+
+@media (max-width: 480px) {
+#authorsList {
+    column-count: 1;
+	column-gap: 10px;
+}
+}
