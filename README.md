@@ -33,7 +33,8 @@ Click Save and the plugin will be installed on your website.
 
 ## Credits
 
-This plugin was conceived and sponsored by [Nordicbysight](https://nordicbysight.se/).
+This plugin was sponsored by [Nordicbysight](https://nordicbysight.se/).
+The list of authors was inspired by the one in OJS 2.4.
 
 Developed by [Lepidus Tecnologia](https://github.com/lepidus).
 
