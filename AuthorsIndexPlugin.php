@@ -35,9 +35,11 @@ class AuthorsIndexPlugin extends GenericPlugin
 
     public function addAuthorsHandler($hookName, $params)
     {
-        $page = $params[0];
+        $page = &$params[0];
+        $handler = &$params[3];
+
         if ($page == 'authors') {
-            define('HANDLER_CLASS', 'APP\plugins\generic\authorsIndex\pages\authors\AuthorsHandler');
+            $handler = new pages\authors\AuthorsHandler();
             return true;
         }
         return false;
