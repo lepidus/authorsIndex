@@ -12,8 +12,8 @@ https://www.gnu.org/licenses/gpl-3.0.txt.
 <version>
     <application>authorsIndex</application>
     <type>plugins.generic</type>
-    <release>0.2.2.0</release>
-    <date>2024-02-19</date>
+    <release>1.0.0.0</release>
+    <date>2025-11-13</date>
     <lazy-load>0</lazy-load>
     <class>AuthorsIndexPlugin</class>
 </version>

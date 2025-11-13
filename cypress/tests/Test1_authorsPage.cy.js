@@ -3,7 +3,7 @@ describe('Validatiations in the Authors Index page', function () {
     const expectedAuthorsNames = ["Karbasizaed, Vajiheh", "Mansour, Amina", "Mwandenga, Alan", "Riouf, Nicolas"];
     
     it('Access the authors index', function () {
-        cy.visit('publicknowledge/authors');
+        cy.visit('index.php/publicknowledge/en/authors');
         cy.contains('h1', 'Authors Index');
         cy.get('#authorsList').children().should('have.length', expectedAuthorsCount * 2);
 
@@ -12,7 +12,7 @@ describe('Validatiations in the Authors Index page', function () {
         }
     });
     it('Go to the search results of the author when clicking on author name', function () {
-        cy.visit('publicknowledge/authors');
+        cy.visit('index.php/publicknowledge/en/authors');
         cy.contains('a', 'Karbasizaed, Vajiheh').click();
         cy.waitJQuery();
         cy.contains('h1', 'Search');
