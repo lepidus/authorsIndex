@@ -15,8 +15,8 @@ Make sure to add the new item as an *external link*, and pass the complete URL.
 
 The latest release of this plugin is compatible with the following PKP applications:
 
-OJS 3.4.0 \
-OPS 3.4.0
+OJS 3.4.0 and 3.5.0\
+OPS 3.4.0 and 3.5.0
 
 ## Plugin Download
 
