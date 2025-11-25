@@ -13,10 +13,15 @@ Make sure to add the new item as an *external link*, and pass the complete URL.
 
 ## Compatibility
 
-The latest release of this plugin is compatible with the following PKP applications:
+The main branch of this repository is compatible with OJS 3.5.0.x.
 
-OJS 3.4.0 and 3.5.0\
-OPS 3.4.0 and 3.5.0
+A version compatible with OJS 3.4.0.x is available in the [stable-3_4_0](https://github.com/lepidus/authorsIndex/tree/stable-3_4_0) branch.
+
+* Plugin version v0.x.x.x is compatible with OJS 3.4.0.x and OPS 3.4.0.x
+* Plugin version v1.x.x.x is compatible with OJS 3.5.0.x and OPS 3.5.0.x
+
+You can find the latest version of the plugin compatible with your OJS version in the [Releases page](https://github.com/lepidus/authorsIndex/releases)
+
 
 ## Plugin Download
 
